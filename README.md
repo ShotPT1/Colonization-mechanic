@@ -13,7 +13,7 @@ Simply download the files and paste each file into the corresponding folder.
 
 # How can i set which country can be colonized, when can it be colonized and who can colonize it ?
 You can set which country can colonize by simply changing the TAGS to which countries you want to colonize, for example now the countries that can colonize are NAV,SPR,TUR,GLC,SOV,FIN,NOR,SWE,ITA,MEX and POR, you can remove the whole 
-ROOT  ={
+			`ROOT  ={
 				OR ={
 					tag = NAV
 					tag = SPR
@@ -27,17 +27,17 @@ ROOT  ={
 					tag = MEX
 					tag = POR
 				}
-			}
+			}`
     if you want every country to be able to colonize
     
    If you want to change which country can be colonized change FRA to which country you want to be colonized from the is_fully_controlled_by = FRA line of code. If you want more countries to be colonized just put the line of code in the OR = { } scope, for example :
-   OR = {
+   `OR = {
     is_fully_controlled_by = FRA
     is_fully_controlled_by = ITA
-   }
+   }`
     
   If you want to chage in what circumstances someone can colonize change this line of code, 		
-	visible = {
+	`visible = {
 			ROOT  ={
 				OR ={
 					tag = NAV
@@ -73,8 +73,8 @@ ROOT  ={
 				}
 			}
 			
-		}
- Now beacuse I don't know how would you want to be able to colonize I'm gonna give a example and hope that you can understand how I do it and copy it.
+		}`
+`Now beacuse I don't know how would you want to be able to colonize I'm gonna give a example and hope that you can understand how I do it and copy it.`
     
     visible = {
 			ROOT  ={
@@ -116,6 +116,6 @@ ROOT  ={
 			
 		}
     
- In this example I made it so you are able to colonize if the ROOT ( the country) has the idea `colonization_idea` and the `colonization_flag` flag
+ `In this example I made it so you are able to colonize if the ROOT ( the country) has the idea `colonization_idea` and the `colonization_flag` flag`
 		
 	
