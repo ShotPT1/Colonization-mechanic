@@ -37,7 +37,7 @@ You can set which country can colonize by simply changing the TAGS to which coun
    }`
     
   If you want to chage in what circumstances someone can colonize change this line of code, 		
-`visible = {
+		`visible = {
 			ROOT  ={
 				OR ={
 					tag = NAV
@@ -52,7 +52,7 @@ You can set which country can colonize by simply changing the TAGS to which coun
 					tag = MEX
 					tag = POR
 				}
-			}`
+			}
 			AND = {
 				is_fully_controlled_by = FRA
 				FROM = {
@@ -73,7 +73,7 @@ You can set which country can colonize by simply changing the TAGS to which coun
 				}
 			}
 			
-		}
+		}`
 Now beacuse I don't know how would you want to be able to colonize I'm gonna give a example and hope that you can understand how I do it and copy it.
     
     visible = {
