@@ -12,7 +12,7 @@ https://streamable.com/iktut7
 Simply download the files and paste each file into the corresponding folder.
 
 # How can i set which country can be colonized, when can it be colonized and who can colonize it ?
-You can set which country can colonize by simply changing the TAGS to which countries you want to colonize, for example now the countries that can colonize are NAV,SPR,TUR,GLC,SOV,FIN,NOR,SWE,ITA,MEX and POR, you can remove the whole 
+You can set which country can colonize by simply changing the TAGS to which countries you want to colonize, for example, now the countries that can colonize are NAV,SPR,TUR,GLC,SOV,FIN,NOR,SWE,ITA,MEX and POR. You can remove the whole 
 
 			ROOT  ={
 				OR ={
@@ -30,7 +30,7 @@ You can set which country can colonize by simply changing the TAGS to which coun
 				}
 			}
 		
- if you want every country to be able to colonize
+ if you want every country to be able to colonize.
     
    If you want to change which country can be colonized change FRA to which country you want to be colonized from the is_fully_controlled_by = FRA line of code. If you want more countries to be colonized just put the line of code in the OR = { } scope, for example :
    
@@ -79,7 +79,7 @@ You can set which country can colonize by simply changing the TAGS to which coun
 			
 		}
 		
-Now beacuse I don't know how would you want to be able to colonize I'm gonna give a example and hope that you can understand how I do it and copy it.
+now beacuse I don't know how you would wnat to do it I'm gonna give a example and hope that you can understand how I do it and copy it.
     
     		visible = {
 			ROOT  ={
@@ -123,4 +123,31 @@ Now beacuse I don't know how would you want to be able to colonize I'm gonna giv
     
  In this example I made it so you are able to colonize if the ROOT ( the country) has the `idea colonization_idea` and the `colonization_flag` flag
 		
-	
+# How can I make it so you are able to colonize coastoal states ?
+
+If you want to be able to colonize coastoal states just replace the current line of code with this one
+
+				FROM = {
+					OR={
+						any_country = {
+							AND = {
+								is_subject_of = ROOT
+								any_owned_state = {
+									any_neighbor_state = {
+										state = PREV.PREV.PREV
+
+									}
+								}
+							}
+						}
+						any_neighbor_state = { is_owned_by = ROOT }
+						AND={
+							is_coastal = yes
+							ROOT = {
+								any_owned_state = {is_coastal = yes}
+							}
+						}
+					}
+				}
+				
+I will update this github with more changes when i make them, eventually making the ultimate colonization system. If you have any questions feel free to ping me in a server.
