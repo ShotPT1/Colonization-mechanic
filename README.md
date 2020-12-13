@@ -123,9 +123,9 @@ now beacuse I don't know how you would wnat to do it I'm gonna give a example an
     
  In this example I made it so you are able to colonize if the ROOT ( the country) has the `idea colonization_idea` and the `colonization_flag` flag
 		
-# How can I make it so you are able to colonize coastoal states ?
+# How can I make it so you are able to colonize coastal states ?
 
-If you want to be able to colonize coastoal states just replace the current line of code with this one
+If you want to be able to colonize coastal states just replace the current line of code with this one
 
 				FROM = {
 					OR={
