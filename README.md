@@ -116,6 +116,6 @@ You can set which country can colonize by simply changing the TAGS to which coun
 			
 		}
     
- `In this example I made it so you are able to colonize if the ROOT ( the country) has the idea `colonization_idea` and the `colonization_flag` flag`
+ In this example I made it so you are able to colonize if the ROOT ( the country) has the `idea colonization_idea` and the `colonization_flag` flag
 		
 	
