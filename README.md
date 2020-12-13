@@ -74,7 +74,7 @@ You can set which country can colonize by simply changing the TAGS to which coun
 			}
 			
 		}`
-`Now beacuse I don't know how would you want to be able to colonize I'm gonna give a example and hope that you can understand how I do it and copy it.`
+Now beacuse I don't know how would you want to be able to colonize I'm gonna give a example and hope that you can understand how I do it and copy it.
     
     visible = {
 			ROOT  ={
