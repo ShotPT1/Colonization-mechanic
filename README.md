@@ -31,10 +31,10 @@ You can set which country can colonize by simply changing the TAGS to which coun
     if you want every country to be able to colonize
     
    If you want to change which country can be colonized change FRA to which country you want to be colonized from the is_fully_controlled_by = FRA line of code. If you want more countries to be colonized just put the line of code in the OR = { } scope, for example :
-   OR = {
+   `OR = {
     is_fully_controlled_by = FRA
     is_fully_controlled_by = ITA
-   }
+   }`
     
   If you want to chage in what circumstances someone can colonize change this line of code, 		
 		`visible = {
@@ -74,7 +74,8 @@ You can set which country can colonize by simply changing the TAGS to which coun
 			}
 			
 		}`
-Now beacuse I don't know how would you want to be able to colonize I'm gonna give a example and hope that you can understand how I do it and copy it.
+		
+`Now beacuse I don't know how would you want to be able to colonize I'm gonna give a example and hope that you can understand how I do it and copy it.
     
     visible = {
 			ROOT  ={
