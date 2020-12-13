@@ -52,7 +52,7 @@ You can set which country can colonize by simply changing the TAGS to which coun
 					tag = MEX
 					tag = POR
 				}
-			}
+			}`
 			AND = {
 				is_fully_controlled_by = FRA
 				FROM = {
